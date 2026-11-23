@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anamika Ajibhasi Subha – Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Anamika</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav aria-label="Main">
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <h1><span>Anamika</span><span>Ajibhasi</span><span>Subha</span></h1>
+    <p class="lead">Integrated MCA student at Rajagiri College of Social Sciences, and first-place winner at an AI exhibition.</p>
+    <a class="btn primary" href="#achievements">See my achievements</a>
+    <a class="btn ghost" href="#contact">Get in touch</a>
+  </div>
+
+  <section id="about" class="about">
+    <div class="wrap">
+      <h2>About me</h2>
+      <p>I'm Anamika, a fourth-semester Integrated MCA student at Rajagiri College of Social Sciences. I enjoy learning new technology and putting it to work, and I have recognition in both artificial intelligence and professional certification to show for it.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <h2>Education</h2>
+      <div class="edu">
+        <h3>Integrated MCA</h3>
+        <p>Rajagiri College of Social Sciences</p>
+        <p>Currently in Semester 4</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <div class="wrap">
+      <h2>Achievements</h2>
+      <p class="hint">Select an achievement to see its certificate.</p>
+      <div class="wins">
+        <button class="win first" data-cert="raise">
+          <span class="icon" aria-hidden="true">🏆</span>
+          <h3>1st prize, RAISE 26</h3>
+          <p>AI exhibition at Rajagiri College of Social Sciences</p>
+        </button>
+        <button class="win" data-cert="foundations">
+          <span class="icon" aria-hidden="true">📜</span>
+          <h3>Foundations of Data Science, AI &amp; Machine Learning</h3>
+          <p>Grant Thornton Bharat · February 2026</p>
+        </button>
+        <button class="win" data-cert="endtoend">
+          <span class="icon" aria-hidden="true">📜</span>
+          <h3>End-to-End Machine Learning</h3>
+          <p>Grant Thornton Bharat · September 2026</p>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <dialog id="certDialog" aria-labelledby="certTitle">
+    <button class="close" id="certClose" aria-label="Close">✕</button>
+    <h3 id="certTitle"></h3>
+    <p class="meta" id="certMeta"></p>
+    <img id="certImg" alt="">
+    <p id="certText"></p>
+  </dialog>
+
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:anamikaaji119@gmail.com">anamikaaji119@gmail.com</a></li>
+        <li>Phone: <a href="tel:+916238639843">6238639843</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/anamika-aji-bhasy-subha-2ba02a364" target="_blank" rel="noopener">Anamika Aji Bhasy Subha</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> Anamika Ajibhasi Subha</span>
+    <button id="theme" type="button">Switch theme</button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
